@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>메인 | T world</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="./images/logo.png" alt="T world 로고" /></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">상품서비스</a></li>
+                    <li><a href="#">다이렉트샵</a></li>
+                    <li><a href="#">T멤버십</a></li>
+                    <li><a href="#">로밍</a></li>
+                    <li><a href="#">혜택/이벤트</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+            </nav>
+            
+            <div class="utility">
+                <div class="outlink">
+                    <a href="https://www.sktelecom5gx.com/poc/html/product/5gmkt_intro.html?utm_source=skt_owned&utm_medium=t-world_PC&utm_campaign=skt5gx_menu_click&utm_term=2020_3_23&utm_content=5gx_home_landing">
+                        <img src="./images/skt_5g.png"/>
+                    </a>
+                    <img src="images/bg_bar.png">
+                    <a href="http://b2b.tworld.co.kr/cs/tbizmain.bc">
+                        <img src="./images/t_world_biz.png"/>
+                    </a>
+                </div>
+                <img src="images/bg_big_bar.png">
+                <div class="search">
+                    <div>search</div>
+                </div>
+
+                <div class="myhome">
+                    <div class="txt">home</div>
+                    <div class="myhome_dropdown">
+                        하나의 아이디로 다양한 SK텔레콤<br /> 서비스를 이용하세요.
+                        <div class="myhome_links">
+                            <a href="../Example2/index.html">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">간편조회</a>
+                            <a href="#">주문확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class ="blind"/>
+    <div class="container">
+        <section class="promotions">
+            <h2 class="blind">T world</h2>
+            <h3 class="blind">프로모션</h3>
+
+            <div id="promotion_wrapper" class="promotion_wrapper">
+                <dl class="promotion">
+                    <div class="promotion-inner">
+                        <dd><img src="./images/promotion1.jpg"></dd>
+                    </div>
+                </dl>
+                <dl class="promotion selected">
+                    <div class="promotion-inner">
+                        <dd><img src="./images/promotion2.jpg"></dd>
+                    </div>
+                </dl>
+                <dl class="promotion">
+                    <div class="promotion-inner">
+                        <dd><img src="./images/promotion3.jpg"></dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="promotion-title-and-pause">
+                <div class="promotion-title-and-pause-inner">
+                    <ul id="promotion-title" class="promotion-title">
+                        <li class="selected" onclick="onPromotionTitleClick(0)">wavve 앤 데이터</li>
+                        <li onclick="onPromotionTitleClick(1)">Galaxy S20도 오늘 도착</li>
+                        <li onclick="onPromotionTitleClick(2)">iCloud 3개월 무료</li>
+                    </ul>
+                    <button class="button-pause" onclick="stopSlide()">일시정지</button>
+                </div>
+            </div>
+            <div class="promotion-navigation-btns">
+                <div class="promotion-navigation-btns-inner">
+                    <button onclick="promotionPrev()" class="prev">이전</button>
+                    <button onclick="promotionNext()" class="next">다음</button>
+                </div>
+            </div>
+        </section>
+        <hr class ="blind"/>
+        <section class="content1">
+            <div  class="content-inner">
+                <div class="login">
+                    <span>"오늘도 당신의 즐거운 하루가 되길 응원합니다!"</span>
+                    <button>로그인</button>
+                    <ul class="login-join">
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">간편조회</a></li>
+                    </ul>
+                    <ul class="taglink">
+                        <li><a href="#"><span># </span><span>문자보내기</span></a></li>
+                        <li><a href="#"><span># </span><span>지점/대리점찾기</span></a></li>
+                        <li><a href="#"><span># </span><span>국가/지역별로밍요금</span></a></li>
+                    </ul>
+                </div>
+                <div class="campain-link">
+                    <a href="#">campain</a>
+                </div>
+                <div class="community-link">
+                    <a href="#">community</a>
+                </div>
+            </div>
+        </section>
+        <hr class ="blind"/>
+        <section class="content2">
+            <h2>놓치기엔 아까운 SKT만의 꿀팁</h2>
+            <div class="content-inner">
+                <div class="tips_title">
+                    <ul id="tips_title">
+                        <li class="selected" onclick="onTipsTitleClick(0)">
+                            <strong>장기고객</strong><br />
+                            <span>을 위한 추가적인 혜택은 없나요?</span>
+                        </li>
+                        <li onclick="onTipsTitleClick(1)">
+                            <strong>요금제를 변경</strong><br />
+                            <span>하고 싶은데 인기상품은 무엇인가요?</span>
+                        </li>
+                        <li onclick="onTipsTitleClick(2)">
+                            <strong>휴대폰 구매</strong><br />
+                            <span>할 때, 받을 수 있는 지원금은 얼마나 되나요?</span>
+                        </li>
+                        <li onclick="onTipsTitleClick(3)">
+                            <strong>휴대폰을 분실</strong><br />
+                            <span>했는데, 찾을 수 있는 방법은 없나요?</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tips_desc" class="tips_desc">
+                    <ul class="selected">
+                        <li>
+                            <span class="point">
+                                <span class="number">1</span>
+                                <span class="txt">혜택</span>
+                            </span> 
+                            <span class="desc">
+                                <span class="title">리필쿠폰 제공</span>
+                                <span class="txt1">기본제공 데이터를</span>
+                                <span class="txt2">2배로 리필할 수 있는 무료쿠폰</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="point">
+                                <span class="number">2</span>
+                                <span class="txt">혜택</span>
+                            </span>
+                            <span class="desc"> 
+                                <span class="title">T멤버십 업그레이드</span>
+                                <span class="txt1">장기가입고객님께 드리는T멤버십</span>
+                                <span class="txt2">등급 업그레이드</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="desc"> 
+                                <span class="title">T 플랜시니어</span>
+                                <span class="txt1">만 65세 이상을 위한</span>
+                                <span class="txt2">데이터&콘텐츠 혜택</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc"> 
+                                <span class="title">미디어 & 데이터 팩</span>
+                                <span class="txt1">데이터 걱정 없는</span>
+                                <span class="txt2">동영상 전용 데이터 제공</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc"> 
+                                <span class="title">가족나눔데이터</span>
+                                <span class="txt1">가족이 결합하면</span>
+                                <span class="txt2">최고 1,000MB 추가 제공</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="desc">
+                                <span class="title">공시지원금</span>
+                                <span class="txt1">매일 업데이트 되는 공시지원금,</span>
+                                <span class="txt2">변동 시 신속 알림 서비스 제공</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                                <span class="title">선택요금할인</span>
+                                <span class="txt1">선택한 요금상품의 약정기간에 따라</span>
+                                <span class="txt2">달라지는 할인 금액</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                                <span class="title">추가지원금</span>
+                                <span class="txt1">이용하면</span>
+                                <span class="txt2">누구나 받을 수 있는 지원금</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="desc">
+                                <span class="title">분실 신고/정지 신청</span>
+                                <span class="txt1">온라인 T world에서 쉽고 빠르게</span>
+                                <span class="txt2">분실 신고&정지 신청 가능</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                                <span class="title">분실폰 위치 추적</span>
+                                <span class="txt1">world와 친구찾기 APP을 통해</span>
+                                <span class="txt2">내 폰 위치 찾기</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                                <span class="title">분실 보상 받기</span>
+                                <span class="txt1">분실보험 가입하셨다면,</span>
+                                <span class="txt2">휴대폰 구입 금액 보상 받기</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="desc">
+                                <span class="title">임대폰 신청</span>
+                                <span class="txt1">바로 사용할 핸드폰이 필요하다면,</span>
+                                <span class="txt2">프리미엄 임대폰 신청하기</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tips_more" class="tips_more">
+                    <ul class="selected">
+                        <li>혜택 더보기</li>
+                    </ul>
+                    <ul>
+                        <li>요금제 더보기</li>
+                    </ul>
+                    <ul>
+                        <li>공시지원금/요금할인/추가지원금 확인</li>
+                    </ul>
+                    <ul>
+                        <li>분실 시 단계별 체크리스트 확인</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class ="blind"/>
+        <section class="content3">
+            <h2>SKT에서 준비한 특별한 <span>추천상품</span></h2>
+            <div class="content3_inner">
+                <div id="recommend_wrapper" class="recommend_wrapper">
+                    <dl class="recommends selected">
+                        <div class="recommend_inner">
+                            <dd><img src="./images/baro.png"></dd>
+                        </div>
+                    </dl>
+                    <dl class="recommends">
+                        <div class="recommend-inner">
+                            <dd><img src="./images/Tplan_max.png"></dd>
+                        </div>
+                    </dl>
+                    <dl class="recommends">
+                        <div class="recommend-inner">>
+                            <dd><img src="./images/handong.png"></dd>
+                        </div>
+                    </dl>
+                    <dl class="recommends">
+                        <div class="recommend-inner">
+                            <dd><img src="./images/wavve_and_data.png"></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="recommend_section_buttons">
+                <div class="recommend_section_buttons_inner">
+                    <div id="play_pause" class="play_pause">
+                        <button onclick="stopSlide()">재생</button>
+                    </div>
+                    <div class="nav_buttons">
+                        <ul class="selected">
+                            <li>1</li>
+                        </ul>
+                        <ul>
+                            <li>2</li>
+                        </ul>
+                        <ul>
+                            <li>3</li>
+                        </ul>
+                        <ul>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommends_navigation_btns">
+                <div class="recommends_navigation_btns_inner">
+                    <button class="prev" onclick="recommendPrev()">이전</button>
+                    <button class="next" onclick="recommendNext()">다음</button>
+                </div>
+            </div>
+        </section>
+        <hr class ="blind"/>
+        <section class="content4">
+            <div  class="content-inner">
+                <ul class="questions">
+                    <li>
+                        <a href="#"><strong>자주하는 질문</strong>고객지원에서 궁금하신 점을 찾아보세요.</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>지점 및 대리점 찾기</strong>가까운 지점 및 대리점을 찾아보세요.</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>이럴 땐 이렇게 하세요</strong>다양한 상황 별 대처법을 쉽게 안내해드립니다.</a>
+                    </li>
+                </ul>
+                <div class="notice">
+                    <a href="#"><strong>[공지사항]</strong> 교육 콘텐츠 비과금 프로모션 안내</a>
+                    <a href="#">더보기</a></div>
+            </div>
+        </section>
+    </div>
+    <hr class ="blind"/>
+    <footer>
+        <div class="footer-container">
+            <div class="footer_inner1">
+                <!-- <a href="#">top</a> -->
+                <div class="footer_inner1_left">
+                    <ul class="links">
+                        <li>이용약관</li>
+                        <li>개인정보 처리방침</li>
+                        <li>개인정보 이용내역</li>
+                        <li>미환급금 조회</li>
+                        <li>공인인증센터</li>
+                        <li>프라이버시 센터</li>
+                        <li class="last">커버리지</li>
+                        <li class="last"><button>전체 메뉴</button></li>
+                    </ul>
+                    <ul class="links">
+                        <li>이용자 피해예방 가이즈</li>
+                        <li>선택약정 할인</li>
+                        <li>책임의 한계와 법적고지</li>
+                        <li>이동전화 파파라치 신고센터</li>
+                        <li class="last">개인정보 파파라치 신고센터</li>
+                        <li class="last"><button>이메일 문의</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="english-link">
+                        <a href="#">English</a>
+                    </div>
+                    <select>
+                        <option>기업 T world</option>
+                        <option>SK Telecom</option>
+                        <option>SK 브로드밴드</option>
+                        <option>SK 스포츠단</option>
+                        <option>T together</option>
+                        <option>T wifi zone</option>
+                        <option>파트너온</option>
+                        <option>NUGU</option>
+                        <option>ADT캡스</option>
+                        <option>행복스토어</option>
+                    </select>
+                </div>
+            </div>
+            <hr class ="blind"/>
+            <div class="footer_inner2">
+                <div class="pride_n_contact">
+                    <ul class="pride">
+                        <li><a href="#">국가고객만족도 22년 연속 1위</a></li>
+                        <li><a href="#">한국서비스품질지수 20년 연속 1위</a></li>
+                        <li><a href="#">한국산업고객만족도 22년 연속 1위</a></li>
+                        <li><a href="#">와이즈유저</a></li>
+                        <li><a href="#">과학기술정보통신부 웹접근성 준수</a></li>
+                        <li><a href="#">13th 웹 어워드 코리아 UX/UI 이노베이션 대상</a></li>
+                    </ul>
+                    <ul class="contact">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Kakao Stroy</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <dl>
+                        <dt>위치</dt>
+                        <dd>서울 특별시 중구 을지로 65</dd>
+                    </dl>
+                    <dl>
+                        <dt>대표이사/사장 : </dt>
+                        <dd>박정호</dd>
+                    </dl>
+                    <dl>
+                        <dt>사업자등록번호 : </dt>
+                        <dd>104-81-37225</dd>
+                    </dl>
+                    <dl>
+                        <dt>판매허가번호 : </dt>
+                        <dd>중구 02923호</dd>
+                        <dd><botton>사업자정보확인</botton>></dd>
+                    </dl>
+                </div>
+                <div>
+                        <dl>
+                            <dt>고객센터 : </dt>
+                            <dd>휴대폰 국번없이 114(무료) 또는 080-011-6000(무료), 국번없이 1599-0011(유료)</dd>
+                        </dl>
+                        <dl>
+                            <dt>인터넷/집전화 고객센터 : </dt>
+                            <dd>080-816-2000(무료) 또는 1600-2000(유료)</dd>
+                        </dl>
+                        <dl>
+                            <dt>초콜릿 고객센터 : </dt>
+                            <dd>1599-3377(유료)</dd>
+                        </dl>
+                        <p>COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

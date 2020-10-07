@@ -1,0 +1,12 @@
+.header_inner {
+    width: 1280px;
+    margin: 0 auto;
+    background: pink;
+}
+.content2 {
+    background: gray;
+}
+.content_inner, .footer_inner {
+    width: 1280px;
+    margin: 0 auto;
+}
